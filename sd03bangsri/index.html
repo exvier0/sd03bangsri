@@ -1,0 +1,139 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD N 03  Bangsri</title>
+  <link rel="stylesheet" href="gallery.css">
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: rgb(255, 255, 255);
+    }
+
+    /* Hero Section */
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background-image: url('uv.jpg'); /* Ganti dengan path gambar kamu */
+      background-size: cover;
+      background-position: center;
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    }
+
+    /* Tambahan untuk tampilan responsif */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 28px;
+        padding: 0 10px;
+      }
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 40px;
+      opacity: 0; /* Mulai dengan transparansi */
+      animation: fadeIn 2s forwards, slideUp 1s ease-out forwards;
+    }
+
+    .hero-text {
+      max-width: 50%;
+      animation: fadeInText 2s ease-out forwards;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #447438;
+      margin-bottom: 20px;
+      animation: fadeInText 2s ease-out forwards;
+    }
+
+    .hero-text div {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      animation: fadeInText 2s ease-out forwards;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #447438;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      animation: fadeInText 2s ease-out forwards;
+    }
+
+    .cta-button:hover {
+      background-color: #ffffff;
+      color: #433f56;
+    }
+
+    .hero-image {
+      animation: slideInImage 1.5s ease-out forwards;
+    }
+
+    .hero-image img {
+      width: 300px;
+      height: auto;
+    }
+
+    /* Keyframes untuk animasi */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInImage {
+      0% { opacity: 0; transform: translateX(50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>SD NEGERI 03 BANGSRI</h1>
+      <div>Selamat Datang Di Seputar SD Negeri  03 Bangsri</div>
+      <a href="about.html" class="cta-button">Buka</a>
+    </div>
+    <div class="hero-image">
+      <img src="logo.png" alt="KEMDIKBUD">
+    </div>
+  </section>
+  </div>
+  
+</body>
+</html>
